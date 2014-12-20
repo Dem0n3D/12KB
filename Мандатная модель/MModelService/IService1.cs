@@ -31,5 +31,7 @@ namespace MModelService
 
         [OperationContract]
         void FileRead(StreamReader fs,List<string> FileName);
+        [OperationContract]
+        void FileReadOpen(StreamReader fs, List<string> Magaz, string text, string filename);
     }
 }
