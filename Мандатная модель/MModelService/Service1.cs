@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -45,6 +46,19 @@ namespace MModelService
         public void PasIsNotCor(string Category, List<string> Magaz)
         {
             Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем "+Category+", но ввел неправильный пароль");
+            Console.WriteLine(DateTime.Now + "  Пользователь пытался зайти под уровнем " + Category + ", но ввел неправильный пароль");
+        }
+
+        public void SaveMagazine(List<string> Magaz)
+        {
+            StreamWriter fs = new StreamWriter("1.txt", true, Encoding.Default);
+            foreach (var i in Magaz)
+            {
+                fs.WriteLine(i);
+            }
+            fs.WriteLine(DateTime.Now + "  Закрытие программы");
+            fs.Close();
+            Console.WriteLine(DateTime.Now + "  Закрытие программы");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -24,5 +25,8 @@ namespace MModelService
         void D_Button_Click(string Category, List<string> Magaz);
         [OperationContract]
         void PasIsNotCor(string Category, List<string> Magaz);
+
+        [OperationContract]
+        void SaveMagazine(List<string> Magaz);
     }
 }
