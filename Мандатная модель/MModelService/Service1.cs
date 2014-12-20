@@ -21,6 +21,27 @@ namespace MModelService
             Console.WriteLine(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
         }
 
+        public void B_Button_Click(string Category, List<string> Magaz)
+        {
+            Category = "B";
+            Magaz.Add(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+            Console.WriteLine(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+        }
+
+        public void C_Button_Click(string Category, List<string> Magaz)
+        {
+            Category = "C";
+            Magaz.Add(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+            Console.WriteLine(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+        }
+
+        public void D_Button_Click(string Category, List<string> Magaz)
+        {
+            Category = "D";
+            Magaz.Add(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+            Console.WriteLine(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+        }
+
         public void PasIsNotCor(string Category, List<string> Magaz)
         {
             Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем "+Category+", но ввел неправильный пароль");

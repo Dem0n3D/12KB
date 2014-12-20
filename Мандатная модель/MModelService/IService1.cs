@@ -17,6 +17,12 @@ namespace MModelService
         [OperationContract]
         void A_Button_Click(string Category, List<string> Magaz);
         [OperationContract]
+        void B_Button_Click(string Category, List<string> Magaz);
+        [OperationContract]
+        void C_Button_Click(string Category, List<string> Magaz);
+        [OperationContract]
+        void D_Button_Click(string Category, List<string> Magaz);
+        [OperationContract]
         void PasIsNotCor(string Category, List<string> Magaz);
     }
 }
