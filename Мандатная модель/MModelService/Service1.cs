@@ -87,5 +87,13 @@ namespace MModelService
             }
             Magaz.Add(DateTime.Now + "  Пользователь открыл файл " + filename + " с ограничением на запись и сохранение");
         }
+
+        public void AccessDenied(List<string> Magaz, string filename)
+        {
+            Magaz.Add(DateTime.Now + "  Попытка доступа к файлу " + filename);
+            Magaz.Add(DateTime.Now + "  Доступ запрещен!!!");
+            Console.WriteLine(DateTime.Now + "  Попытка доступа к файлу " + filename);
+            Console.WriteLine(DateTime.Now + "  Доступ запрещен!!!");
+        }
     }
 }
