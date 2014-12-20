@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+
+namespace MModelService
+{
+    // ПРИМЕЧАНИЕ. Команду "Переименовать" в меню "Рефакторинг" можно использовать для одновременного изменения имени класса "Service1" в коде и файле конфигурации.
+    public class Service1 : IService1
+    {
+        public void DoWork()
+        {
+        }
+
+        public void A_Button_Click(string Category, List<string> Magaz)
+        {
+            Category = "A";
+            Magaz.Add(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+            Console.WriteLine(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+        }
+
+        public void PasIsNotCor(string Category, List<string> Magaz)
+        {
+            Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем "+Category+", но ввел неправильный пароль");
+        }
+    }
+}
