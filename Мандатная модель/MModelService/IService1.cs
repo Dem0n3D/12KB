@@ -28,5 +28,8 @@ namespace MModelService
 
         [OperationContract]
         void SaveMagazine(List<string> Magaz);
+
+        [OperationContract]
+        void FileRead(StreamReader fs,List<string> FileName);
     }
 }

@@ -60,5 +60,13 @@ namespace MModelService
             fs.Close();
             Console.WriteLine(DateTime.Now + "  Закрытие программы");
         }
+
+        public void FileRead(StreamReader fs,List<string> FileName)
+        {
+            for (int i = 0; !fs.EndOfStream; i++)
+            {
+                FileName.Add(fs.ReadLine());
+            }
+        }
     }
 }
