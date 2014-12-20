@@ -33,5 +33,7 @@ namespace MModelService
         void FileRead(StreamReader fs,List<string> FileName);
         [OperationContract]
         void FileReadOpen(StreamReader fs, List<string> Magaz, string text, string filename);
+        [OperationContract]
+        void FileReadOpenIsReadonly(StreamReader fs, List<string> Magaz, string text, string filename);
     }
 }

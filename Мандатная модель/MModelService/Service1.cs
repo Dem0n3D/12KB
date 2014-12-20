@@ -78,5 +78,14 @@ namespace MModelService
             Magaz.Add(DateTime.Now + "  Пользователь открыл файл " + filename);
             Console.WriteLine(DateTime.Now + "  Пользователь открыл файл " + filename);
         }
+
+        public void FileReadOpenIsReadonly(StreamReader fs, List<string> Magaz, string text, string filename)
+        {
+            for (int j = 0; !fs.EndOfStream; j++)
+            {
+                text += fs.ReadLine();
+            }
+            Magaz.Add(DateTime.Now + "  Пользователь открыл файл " + filename + " с ограничением на запись и сохранение");
+        }
     }
 }
