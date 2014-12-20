@@ -41,5 +41,8 @@ namespace MModelService
         [OperationContract]
         void Save(List<string> Magaz, string text, string filename);
 
+        [OperationContract]
+        void New(string filepath, string namefile, string category, string text, List<string> Magaz);
+
     }
 }

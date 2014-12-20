@@ -102,6 +102,31 @@ namespace MModelService
             fs.WriteLine(text);
             fs.Close();
             Magaz.Add(DateTime.Now + "  Пользователь изменил документ " + filename);
+            Console.WriteLine(DateTime.Now + "  Пользователь изменил документ " + filename);
+        }
+
+        public void New(string filePath, string nameFile, string category, string text, List<string> Magaz)
+        {
+            Magaz.Add(DateTime.Now + "  Пользователь создал новый файл " + filePath + "\\" + nameFile + ".txt");
+            string path = filePath + "\\" + nameFile + ".txt";
+            File.WriteAllText(path, text, Encoding.Default);
+            if (category.Equals("A"))
+            {
+                File.AppendAllText("A.txt", Environment.NewLine + path, Encoding.Default);
+            }
+            if (category.Equals("B"))
+            {
+                File.AppendAllText("B.txt", Environment.NewLine + path, Encoding.Default);
+            }
+            if (category.Equals("C"))
+            {
+                File.AppendAllText("C.txt", Environment.NewLine + path, Encoding.Default);
+            }
+            if (category.Equals("D"))
+            {
+                File.AppendAllText("D.txt", Environment.NewLine + path, Encoding.Default);
+            }
+            Console.WriteLine(DateTime.Now + "  Пользователь создал новый файл " + filePath + "\\" + nameFile + ".txt");
         }
     }
 }
