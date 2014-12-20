@@ -95,5 +95,13 @@ namespace MModelService
             Console.WriteLine(DateTime.Now + "  Попытка доступа к файлу " + filename);
             Console.WriteLine(DateTime.Now + "  Доступ запрещен!!!");
         }
+
+        public void Save(List<string> Magaz, string text, string filename)
+        {
+            StreamWriter fs = new StreamWriter(filename, false, Encoding.Default);
+            fs.WriteLine(text);
+            fs.Close();
+            Magaz.Add(DateTime.Now + "  Пользователь изменил документ " + filename);
+        }
     }
 }

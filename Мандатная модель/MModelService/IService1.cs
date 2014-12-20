@@ -35,8 +35,11 @@ namespace MModelService
         void FileReadOpen(StreamReader fs, List<string> Magaz, string text, string filename);
         [OperationContract]
         void FileReadOpenIsReadonly(StreamReader fs, List<string> Magaz, string text, string filename);
-        //access denied
         [OperationContract]
         void AccessDenied(List<string> Magaz, string filename);
+
+        [OperationContract]
+        void Save(List<string> Magaz, string text, string filename);
+
     }
 }
