@@ -120,8 +120,7 @@ namespace MModel
 
             if (pas.Pas.Equals("poiuyt"))
             {
-            Category = "D";
-            Magaz.Add(DateTime.Now + "  Пользователь зашел в систему под уровнем " + Category);
+                Client.D_Button_Click(Category,Magaz.ToArray());
             User user = new User();
             user.Owner = this;
             user.Category1 = Category;
