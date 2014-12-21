@@ -138,13 +138,7 @@ namespace MModel
 
         private void Window_Closing_1(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            StreamWriter fs = new StreamWriter("1.txt",true,Encoding.Default);
-            foreach (var i in Magaz)
-            {
-                fs.WriteLine(i);
-            }
-            fs.WriteLine(DateTime.Now + "  Закрытие программы");
-            fs.Close();
+            Client.SaveMagazine(Magaz.ToArray());
         }
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
