@@ -57,8 +57,7 @@ namespace MModel
             }
             else
             {
-                MessageBox.Show("Пароль неверный!","Ok");
-                Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем А, но ввел неправильный пароль");
+                Client.PasIsNotCor(Category,Magaz.ToArray());
             }
         }
 
