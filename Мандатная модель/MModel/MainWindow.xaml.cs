@@ -81,8 +81,7 @@ namespace MModel
             }
             else
             {
-                MessageBox.Show("Пароль неверный!", "Ok");
-                Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем B, но ввел неправильный пароль");
+                Client.PasIsNotCor(Category,Magaz.ToArray());
             }
         }
 
@@ -107,8 +106,7 @@ namespace MModel
             }
             else
             {
-                MessageBox.Show("Пароль неверный!","Ok");
-                Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем C, но ввел неправильный пароль");
+                Client.PasIsNotCor(Category,Magaz.ToArray());
             }
         }
 
@@ -134,8 +132,7 @@ namespace MModel
 }
             else
             {
-                MessageBox.Show("Пароль неверный!","Ok");
-                Magaz.Add(DateTime.Now + "  Пользователь пытался зайти под уровнем D, но ввел неправильный пароль");
+                Client.PasIsNotCor(Category,Magaz.ToArray());
             }
         }
 
