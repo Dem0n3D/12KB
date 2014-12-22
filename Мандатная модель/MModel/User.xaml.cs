@@ -212,11 +212,11 @@ namespace MModel
             if (MessageBox.Show("Сохранить изменения?", "Сохранение", MessageBoxButton.OKCancel) ==
                 MessageBoxResult.OK)
             {
-                
-               StreamWriter fs = new StreamWriter(lbList.SelectedItem.ToString(), false, Encoding.Default);
+                Client1.Save(Magaz1.ToArray(), tbText.Text, lbList.SelectedItem.ToString());
+               /*StreamWriter fs = new StreamWriter(lbList.SelectedItem.ToString(), false, Encoding.Default);
                 fs.WriteLine(tbText.Text);
                 fs.Close();
-                Magaz1.Add(DateTime.Now + "  Пользователь изменил документ " + lbList.SelectedItem.ToString());
+                Magaz1.Add(DateTime.Now + "  Пользователь изменил документ " + lbList.SelectedItem.ToString());*/
             }
         }
 
