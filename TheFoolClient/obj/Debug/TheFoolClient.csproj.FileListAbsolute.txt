@@ -1,0 +1,13 @@
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\bin\Debug\TheFoolClient.exe.config
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\bin\Debug\TheFoolClient.exe
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\bin\Debug\TheFoolClient.pdb
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient.csprojResolveAssemblyReference.cache
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\MainWindow.baml
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\MainWindow.g.cs
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\App.g.cs
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient_MarkupCompile.cache
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient.g.resources
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient.Properties.Resources.resources
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient.csproj.GenerateResource.Cache
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient.exe
+C:\Users\VlaDi4eKK\Documents\GitHub\Fool\TheFoolClient\obj\Debug\TheFoolClient.pdb
