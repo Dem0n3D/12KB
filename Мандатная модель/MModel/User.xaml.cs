@@ -229,7 +229,8 @@ namespace MModel
                 NameFile = fileName.NameFile1;
                 FilePath = fileName.Path1;
             }
-            Magaz1.Add(DateTime.Now + "  Пользователь создал новый файл " + FilePath + "\\" + NameFile + ".txt");
+            Client1.New(FilePath, NameFile, Category1, fileName.tbFText.Text,Magaz1.ToArray());
+           /* Magaz1.Add(DateTime.Now + "  Пользователь создал новый файл " + FilePath + "\\" + NameFile + ".txt");
             string path = FilePath + "\\" + NameFile + ".txt";
             File.WriteAllText(path, fileName.tbFText.Text, Encoding.Default);
             if (Category1.Equals("A"))
@@ -248,6 +249,7 @@ namespace MModel
             {
                 File.AppendAllText("D.txt", Environment.NewLine + path, Encoding.Default);
             }
+            */
             lA.Clear();
             lB.Clear();
             lC.Clear();
