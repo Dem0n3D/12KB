@@ -18,14 +18,14 @@
                 <ImageBrush ImageSource="img/507-green.jpg" TileMode="FlipXY" ViewportUnits="Absolute" Viewport="0 0 37 37"></ImageBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Viewbox Margin="10px" Grid.Row="2" Grid.Column="1">
-            <StackPanel Name="selfCard" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
+        <Viewbox Margin="10" Grid.Row="2" Grid.Column="1">
+            <StackPanel Name="stpCardsMain" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
         </Viewbox>
-        <Viewbox Margin="10px" Grid.Row="1" Grid.Column="1">
-            <StackPanel x:Name="tableCard" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
+        <Viewbox Margin="10,40,10,61" Grid.Row="1" Grid.Column="1">
+            <StackPanel x:Name="stpCardsIn" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
         </Viewbox>
-        <Viewbox Margin="10px" Grid.Column="1" Grid.Row="0">
-            <StackPanel x:Name="enemyCard" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
+        <Viewbox Margin="10,76,10,25" Grid.Row="1" Grid.Column="1">
+            <StackPanel x:Name="stpCardsOut" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" AllowDrop="True" Focusable="True"/>
         </Viewbox>
     </Grid>
 </Window>
