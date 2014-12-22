@@ -102,12 +102,12 @@ namespace MModel
             {
                 if (lMetka[a].Equals("A"))
                 {
-                    //Client1.FileReadOpen(fs, Magaz1.ToArray(), tbText.Text, lbList.SelectedItem.ToString());
                     for (int j = 0; !fs.EndOfStream; j++)
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
+                    Client1.FileReadOpen(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
+                    //Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
                 }
                 else
                 {
@@ -117,7 +117,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
+                    Client1.FileReadOpenIsReadonly(Magaz1.ToArray(), lbList.SelectedItem.ToString(), Category1);
+                    //Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
                 }
             }
             if (Category1.Equals("B"))
@@ -125,7 +126,7 @@ namespace MModel
                 if (lMetka[a].CompareTo("B") == -1)
                 {
                     MessageBox.Show("Нет доступа к документу!", "Ok");
-                   Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
+                   Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
                    /* Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
                      Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");*/
                 }
@@ -136,7 +137,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
+                    Client1.FileReadOpen(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
+                    //Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
                 }
                 else
                 {
@@ -146,7 +148,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
+                    Client1.FileReadOpenIsReadonly(Magaz1.ToArray(), lbList.SelectedItem.ToString(), Category1);
+                    //Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
                 }
             }
             if (Category1.Equals("C"))
@@ -154,7 +157,7 @@ namespace MModel
                 if (lMetka[a].CompareTo("C") == -1)
                 {
                     MessageBox.Show("Нет доступа к документу!", "Ok");
-                    Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
+                    Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
                    /* Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
                     Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");*/
                 }
@@ -164,7 +167,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
+                    Client1.FileReadOpen(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
+                    //Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
                 }
                 else
                 {
@@ -174,7 +178,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
+                    Client1.FileReadOpenIsReadonly(Magaz1.ToArray(), lbList.SelectedItem.ToString(), Category1);
+                    //Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
                 }
             }
             if (Category1.Equals("D"))
@@ -182,7 +187,7 @@ namespace MModel
                 if (lMetka[a].CompareTo("D") == -1)
                 {
                     MessageBox.Show("Нет доступа к документу!", "Ok");
-                    Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
+                    Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
                     /*Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
                     Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");*/
                 }
@@ -192,7 +197,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
+                    Client1.FileReadOpen(Magaz1.ToArray(), lbList.SelectedItem.ToString(),Category1);
+                   // Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString());
                 }
                 else
                 {
@@ -202,7 +208,8 @@ namespace MModel
                     {
                         tbText.Text += fs.ReadLine();
                     }
-                    Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
+                    Client1.FileReadOpenIsReadonly(Magaz1.ToArray(), lbList.SelectedItem.ToString(), Category1);
+                   // Magaz1.Add(DateTime.Now + "  Пользователь открыл файл " + lbList.SelectedItem.ToString() + " с ограничением на запись и сохранение");
                 }
             }
         }
@@ -212,7 +219,7 @@ namespace MModel
             if (MessageBox.Show("Сохранить изменения?", "Сохранение", MessageBoxButton.OKCancel) ==
                 MessageBoxResult.OK)
             {
-                Client1.Save(Magaz1.ToArray(), tbText.Text, lbList.SelectedItem.ToString());
+                Client1.Save(Magaz1.ToArray(), tbText.Text, lbList.SelectedItem.ToString(),Category1);
                /*StreamWriter fs = new StreamWriter(lbList.SelectedItem.ToString(), false, Encoding.Default);
                 fs.WriteLine(tbText.Text);
                 fs.Close();
@@ -229,7 +236,7 @@ namespace MModel
                 NameFile = fileName.NameFile1;
                 FilePath = fileName.Path1;
             }
-            Client1.New(FilePath, NameFile, Category1, fileName.tbFText.Text,Magaz1.ToArray());
+            Client1.New(FilePath, NameFile, Category1, fileName.tbFText.Text,Magaz1.ToArray(),Category1);
            /* Magaz1.Add(DateTime.Now + "  Пользователь создал новый файл " + FilePath + "\\" + NameFile + ".txt");
             string path = FilePath + "\\" + NameFile + ".txt";
             File.WriteAllText(path, fileName.tbFText.Text, Encoding.Default);
