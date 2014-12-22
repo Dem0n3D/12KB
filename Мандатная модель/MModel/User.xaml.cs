@@ -125,9 +125,9 @@ namespace MModel
                 if (lMetka[a].CompareTo("B") == -1)
                 {
                     MessageBox.Show("Нет доступа к документу!", "Ok");
-                   // Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
-                    Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
-                     Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");
+                   Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
+                   /* Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
+                     Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");*/
                 }
 
                 if (lMetka[a].Equals("B"))
@@ -154,9 +154,9 @@ namespace MModel
                 if (lMetka[a].CompareTo("C") == -1)
                 {
                     MessageBox.Show("Нет доступа к документу!", "Ok");
-                    //Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
-                    Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
-                    Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");
+                    Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
+                   /* Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
+                    Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");*/
                 }
                 if (lMetka[a].Equals("C"))
                 {
@@ -182,9 +182,9 @@ namespace MModel
                 if (lMetka[a].CompareTo("D") == -1)
                 {
                     MessageBox.Show("Нет доступа к документу!", "Ok");
-                    //Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
-                    Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
-                    Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");
+                    Client1.AccessDenied(Magaz1.ToArray(), lbList.SelectedItem.ToString());
+                    /*Magaz1.Add(DateTime.Now + "  Попытка доступа к файлу " + lbList.SelectedItem.ToString());
+                    Magaz1.Add(DateTime.Now + "  Доступ запрещен!!!");*/
                 }
                 if (lMetka[a].Equals("D"))
                 {
