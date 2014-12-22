@@ -1,0 +1,1 @@
+c:\Users\MaSkim\documents\visual studio 2013\Projects\Client\Server\bin\Debug\Server.exe.config
