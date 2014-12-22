@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/SnakeServer/SnakeServer/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SnakeServer" />
+  <xs:element name="DoWork">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoWorkResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Start">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="snake" nillable="true" type="q1:Snake" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="field" nillable="true" type="q2:Field" />
+        <xs:element minOccurs="0" name="height" type="xs:int" />
+        <xs:element minOccurs="0" name="widht" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="snake" nillable="true" type="q3:Snake" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="field" nillable="true" type="q4:Field" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Motion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="snake" nillable="true" type="q5:Snake" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="field" nillable="true" type="q6:Field" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MotionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="snake" nillable="true" type="q7:Snake" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="field" nillable="true" type="q8:Field" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="snake" nillable="true" type="q9:Snake" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="field" nillable="true" type="q10:Field" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="snake" nillable="true" type="q11:Snake" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SnakeServer" minOccurs="0" name="field" nillable="true" type="q12:Field" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

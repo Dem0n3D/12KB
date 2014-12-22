@@ -1,0 +1,14 @@
+﻿<Window x:Class="SnakeGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="428" Width="525" KeyDown="Window_KeyDown">
+	<StackPanel Orientation="Horizontal">
+		<Canvas x:Name="CanvasField" Height="400" Width="400" Background="#FFF7F3F3"/>
+		<StackPanel Background="#FFD3E2E1">
+			<Button x:Name="ButtonStart" Content="Start" Width="100" Margin="5" Height="25" Background="#FF9DE2DF" Click="ButtonStart_Click"/>
+			<Label Content="Point Value" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5"/>
+			<Label x:Name="LabelBonus" Content="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5" Height="25"/>
+		</StackPanel>
+	</StackPanel>
+
+</Window>
