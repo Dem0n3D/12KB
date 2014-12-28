@@ -1,0 +1,44 @@
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\bin\Debug\demoWCFClient.exe.config
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\bin\Debug\demoWCFClient.exe
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\bin\Debug\demoWCFClient.pdb
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.csprojResolveAssemblyReference.cache
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\MainWindow.baml
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\MainWindow.g.cs
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\App.g.cs
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient_MarkupCompile.cache
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.g.resources
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.Properties.Resources.resources
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.csproj.GenerateResource.Cache
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.exe
+c:\users\truetank\documents\visual studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\bin\Debug\demoWCFClient.exe.config
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\bin\Debug\demoWCFClient.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\bin\Debug\demoWCFClient.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\MainWindow.baml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\MainWindow.g.cs
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\App.g.cs
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient_MarkupCompile.cache
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.g.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.Properties.Resources.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient\demoWCFClient\obj\Debug\demoWCFClient.csproj.GenerateResource.Cache
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient — копия\demoWCFClient\bin\Debug\demoWCFClient.exe.config
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient — копия\demoWCFClient\obj\Debug\demoWCFClient.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\demoWCFClient — копия\demoWCFClient\obj\Debug\demoWCFClient.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\bin\Debug\demoWCFClient.exe.config
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\bin\Debug\demoWCFClient.exe
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\bin\Debug\demoWCFClient.pdb
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\MainWindow.baml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\secWindow.baml
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\MainWindow.g.cs
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\secWindow.g.cs
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\App.g.cs
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient_MarkupCompile.cache
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient.g.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient.Properties.Resources.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\MP.Lab18\demoWCFClient\obj\Debug\demoWCFClient.csproj.GenerateResource.Cache
