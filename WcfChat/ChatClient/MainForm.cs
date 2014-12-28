@@ -65,13 +65,26 @@ namespace ChatClient
             txtChat.AppendText("\n" + message.User.UserName + " says (" + message.Date + ") :\n" + message.Message+"\n");
         }
 
+	
         private void usersTimer_Tick(object sender, EventArgs e)
         {
             List<ChatUser> listUsers = remoteProxy.GetAllUsers();
             lstUsers.DataSource = listUsers;
         }
 
-       
+       private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (isConnected)
+            {
+                remoteProxy.SendNewMessage(new ChatMessage()
+                {
+                    Date = DateTime.Now,
+                    Message = "i'm logged out",
+                    User = clientUser
+                });
+                remoteProxy.RemoveUser(clientUser);
+            }
+        }
 
         private void messagesTimer_Tick(object sender, EventArgs e)
         {
