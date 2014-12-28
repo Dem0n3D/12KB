@@ -31,7 +31,7 @@ namespace demoWCFClient
 
         private void startProg(object sender, RoutedEventArgs e)
         {
-            Service1Client client = new Service1Client();
+            Service1Client client = new Service1Client(new NetTcpBinding(), new System.ServiceModel.EndpointAddress("net.tcp://localhost:8875"));
             int sec;
             if (client.stProg(tbLogin.Text, pbPass.Password, out sec))
             {

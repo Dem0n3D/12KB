@@ -23,17 +23,19 @@ namespace Servis
             SortedDictionary<string, string> logins = new SortedDictionary<string, string>();
             SortedDictionary<string, int> secur = new SortedDictionary<string, int>();
 
-            StreamReader sr = new StreamReader("logins.txt");
-            string tmp = sr.ReadLine();
-            while (tmp != null)
+            using (StreamReader sr = new StreamReader("logins.txt"))
             {
-                string[] a = tmp.Split(new char[] { ' ' });
-                logins[a[0]] = a[1];
-                secur[a[0]] = int.Parse(a[2]);
-                tmp = sr.ReadLine();
+                string tmp = sr.ReadLine();
+                while (tmp != null)
+                {
+                    string[] a = tmp.Split(new char[] {' '});
+                    logins[a[0]] = a[1];
+                    secur[a[0]] = int.Parse(a[2]);
+                    tmp = sr.ReadLine();
+                }
+                sr.Close();
+                sec = 0;
             }
-            sr.Close();
-            sec = 0;
 
             if (logins.ContainsKey(log) == false || logins[log] != pass)
             {
@@ -48,7 +50,7 @@ namespace Servis
                 //temp.Show();
                 //this.Close();
                 sec = secur[log];
-                return false;
+                return true;
             }
         }
     }
