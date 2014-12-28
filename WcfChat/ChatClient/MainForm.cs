@@ -60,6 +60,11 @@ namespace ChatClient
             }
         }
 
+	private void InsertMessage(ChatMessage message)
+        {
+            txtChat.AppendText("\n" + message.User.UserName + " says (" + message.Date + ") :\n" + message.Message+"\n");
+        }
+
         private void usersTimer_Tick(object sender, EventArgs e)
         {
             List<ChatUser> listUsers = remoteProxy.GetAllUsers();
