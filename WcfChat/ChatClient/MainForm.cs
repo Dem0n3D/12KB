@@ -86,6 +86,25 @@ namespace ChatClient
             }
         }
 
+ 	private void btnSend_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtMessage.Text))
+            {
+                ChatMessage newMessage = new ChatMessage()
+                {
+                    Date = DateTime.Now,
+                    Message = txtMessage.Text,
+                    User = clientUser
+                };
+                remoteProxy.SendNewMessage(newMessage);
+                InsertMessage(newMessage);
+                txtMessage.Text = String.Empty;
+            }
+                
+            
+        }
+
+
         private void messagesTimer_Tick(object sender, EventArgs e)
         {
             List<ChatMessage> messages = remoteProxy.GetNewMessages(clientUser);
