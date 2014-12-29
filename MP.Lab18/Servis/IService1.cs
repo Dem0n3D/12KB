@@ -18,5 +18,11 @@ namespace Servis
 
         [OperationContract]
         bool stProg(string log, string pass, out int sec);
+
+        [OperationContract]
+        List<string> getFilesAndDir(string path);
+
+        [OperationContract]
+        void begWork();
     }
 }

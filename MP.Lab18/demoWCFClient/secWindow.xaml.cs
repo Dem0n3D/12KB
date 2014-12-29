@@ -1,7 +1,9 @@
-﻿using System;
+﻿using demoWCFClient.CalcServiceReference;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,7 +25,9 @@ namespace WebScreen
         private string name, mainDir = @"C:\";
         private int lvlOfSec;
         List<string> paths = new List<string>();
-        private SortedDictionary<string, int> levels = new SortedDictionary<string, int>(); 
+        private SortedDictionary<string, int> levels = new SortedDictionary<string, int>();
+
+        private Service1Client client;
 
         public secWindow(string n, int lvl)
         {
@@ -32,16 +36,11 @@ namespace WebScreen
             name = n;
             lvlOfSec = lvl;
 
-            StreamReader srlvl = new StreamReader("temp.txt", Encoding.UTF8);
-            string tmp = srlvl.ReadLine();
-            while (tmp != null)
-            {
-                levels[tmp.Substring(0, tmp.Count() - 2)] = int.Parse(tmp.Last().ToString());
-                tmp = srlvl.ReadLine();
-            }
-            srlvl.Close();
+            client = new Service1Client(new NetTcpBinding(), new System.ServiceModel.EndpointAddress("net.tcp://localhost:8875"));
+            client.begWork();
 
             paths.Add(mainDir);
+            
             getFilesAndDir(paths.Last());
 
             if (lvlOfSec != 2)
@@ -60,18 +59,9 @@ namespace WebScreen
         private void getFilesAndDir(string path)
         {
             lbDir.Items.Clear();
-            DirectoryInfo[] di =
-                new DirectoryInfo(path).GetDirectories();
-            foreach (var d in di)
+            foreach (var v in client.getFilesAndDir(path))
             {
-                lbDir.Items.Add(d.ToString());
-            }
-            FileInfo[] fi = new DirectoryInfo(path).GetFiles();
-            foreach (var f in fi)
-            {
-                string c = path + f.ToString();
-                if (!levels.ContainsKey(c) || (levels[c] == 1 && lvlOfSec == 2) || levels[c] == 2)
-                    lbDir.Items.Add(f.ToString());
+                lbDir.Items.Add(v);
             }
             lbDir.SelectedIndex = 0;
         }

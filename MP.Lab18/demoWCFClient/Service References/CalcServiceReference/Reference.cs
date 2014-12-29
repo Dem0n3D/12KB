@@ -27,6 +27,18 @@ namespace demoWCFClient.CalcServiceReference {
         // CODEGEN: Идет формирование контракта на сообщение, так как операция может иметь много возвращаемых значений.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/stProg", ReplyAction="http://tempuri.org/IService1/stProgResponse")]
         System.Threading.Tasks.Task<demoWCFClient.CalcServiceReference.stProgResponse> stProgAsync(demoWCFClient.CalcServiceReference.stProgRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getFilesAndDir", ReplyAction="http://tempuri.org/IService1/getFilesAndDirResponse")]
+        string[] getFilesAndDir(string path);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getFilesAndDir", ReplyAction="http://tempuri.org/IService1/getFilesAndDirResponse")]
+        System.Threading.Tasks.Task<string[]> getFilesAndDirAsync(string path);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/begWork", ReplyAction="http://tempuri.org/IService1/begWorkResponse")]
+        void begWork();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/begWork", ReplyAction="http://tempuri.org/IService1/begWorkResponse")]
+        System.Threading.Tasks.Task begWorkAsync();
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -120,6 +132,22 @@ namespace demoWCFClient.CalcServiceReference {
         
         public System.Threading.Tasks.Task<demoWCFClient.CalcServiceReference.stProgResponse> stProgAsync(demoWCFClient.CalcServiceReference.stProgRequest request) {
             return base.Channel.stProgAsync(request);
+        }
+        
+        public string[] getFilesAndDir(string path) {
+            return base.Channel.getFilesAndDir(path);
+        }
+        
+        public System.Threading.Tasks.Task<string[]> getFilesAndDirAsync(string path) {
+            return base.Channel.getFilesAndDirAsync(path);
+        }
+        
+        public void begWork() {
+            base.Channel.begWork();
+        }
+        
+        public System.Threading.Tasks.Task begWorkAsync() {
+            return base.Channel.begWorkAsync();
         }
     }
 }

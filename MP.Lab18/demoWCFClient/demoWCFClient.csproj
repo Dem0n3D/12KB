@@ -110,6 +110,9 @@
     <None Include="Service References\CalcServiceReference\item1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\CalcServiceReference\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\CalcServiceReference\Service1.wsdl" />
   </ItemGroup>
   <ItemGroup>

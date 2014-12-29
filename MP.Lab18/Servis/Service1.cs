@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -17,6 +18,11 @@ namespace Servis
         public void DoWork()
         {
         }
+
+        private string name, mainDir = @"C:\";
+        private int lvlOfSec;
+        List<string> paths = new List<string>();
+        private SortedDictionary<string, int> levels = new SortedDictionary<string, int>();
 
         public bool stProg(string log, string pass, out int sec)
         {
@@ -33,25 +39,52 @@ namespace Servis
                     secur[a[0]] = int.Parse(a[2]);
                     tmp = sr.ReadLine();
                 }
-                sr.Close();
                 sec = 0;
             }
 
             if (logins.ContainsKey(log) == false || logins[log] != pass)
             {
-                //MessageBox.Show("Вы ввели неправильный логин или пароль", "Ошибка", MessageBoxButton.OK);
                 return false;
                 
             }
             else
             {
-                //MessageBox.Show(String.Format("{0}, добро пожаловать!", log), "Вход в систему", MessageBoxButton.OK);
-                //var temp = new secWindow(log, secur[log]);
-                //temp.Show();
-                //this.Close();
                 sec = secur[log];
                 return true;
             }
+        }
+
+        public void begWork()
+        {
+            using (StreamReader srlvl = new StreamReader("temp.txt", Encoding.UTF8))
+            {
+                string tmp = srlvl.ReadLine();
+                while (tmp != null)
+                {
+                    levels[tmp.Substring(0, tmp.Count() - 2)] = int.Parse(tmp.Last().ToString());
+                    tmp = srlvl.ReadLine();
+                }
+
+                paths.Add(mainDir);
+            }
+
+        }
+
+        public List<string> getFilesAndDir(string path)
+        {
+            List<string> re = new List<string>();
+            DirectoryInfo[] di = new DirectoryInfo(path).GetDirectories();
+            FileInfo[] fi = new DirectoryInfo(path).GetFiles();
+            foreach (var info in di)
+            {
+                re.Add(info.ToString());
+            }
+            foreach (var info in fi)
+            {
+                re.Add(info.ToString());
+            }
+
+           return re;
         }
     }
 }
