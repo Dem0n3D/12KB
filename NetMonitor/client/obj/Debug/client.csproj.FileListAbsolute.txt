@@ -15,3 +15,6 @@ c:\users\truetank\documents\12KB\NetMonitor\client\bin\Debug\client.exe
 c:\users\truetank\documents\12KB\NetMonitor\client\bin\Debug\client.pdb
 c:\users\truetank\documents\12KB\NetMonitor\client\obj\Debug\client.exe
 c:\users\truetank\documents\12KB\NetMonitor\client\obj\Debug\client.pdb
+C:\Users\HP\Documents\12KB\NetMonitor\client\bin\Debug\client.exe.config
+C:\Users\HP\Documents\12KB\NetMonitor\client\obj\Debug\client.exe
+C:\Users\HP\Documents\12KB\NetMonitor\client\obj\Debug\client.pdb
