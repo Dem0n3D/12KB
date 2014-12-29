@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Server/Service1/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Server/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Connect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLastClick_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastClick" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLastClick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastClickResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CanClick_InputMessage">
+    <wsdl:part name="parameters" element="tns:CanClick" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CanClick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CanClickResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TryClick_InputMessage">
+    <wsdl:part name="parameters" element="tns:TryClick" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TryClick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TryClickResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Connect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Connect" message="tns:IService1_Connect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConnectResponse" message="tns:IService1_Connect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastClick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLastClick" message="tns:IService1_GetLastClick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLastClickResponse" message="tns:IService1_GetLastClick_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CanClick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CanClick" message="tns:IService1_CanClick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CanClickResponse" message="tns:IService1_CanClick_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TryClick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TryClick" message="tns:IService1_TryClick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TryClickResponse" message="tns:IService1_TryClick_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connect">
+      <soap:operation soapAction="http://tempuri.org/IService1/Connect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastClick">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLastClick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CanClick">
+      <soap:operation soapAction="http://tempuri.org/IService1/CanClick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TryClick">
+      <soap:operation soapAction="http://tempuri.org/IService1/TryClick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Server/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
