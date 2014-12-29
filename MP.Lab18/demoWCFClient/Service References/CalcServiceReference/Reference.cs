@@ -39,6 +39,12 @@ namespace demoWCFClient.CalcServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/begWork", ReplyAction="http://tempuri.org/IService1/begWorkResponse")]
         System.Threading.Tasks.Task begWorkAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/openFile", ReplyAction="http://tempuri.org/IService1/openFileResponse")]
+        string openFile(string path);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/openFile", ReplyAction="http://tempuri.org/IService1/openFileResponse")]
+        System.Threading.Tasks.Task<string> openFileAsync(string path);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -148,6 +154,14 @@ namespace demoWCFClient.CalcServiceReference {
         
         public System.Threading.Tasks.Task begWorkAsync() {
             return base.Channel.begWorkAsync();
+        }
+        
+        public string openFile(string path) {
+            return base.Channel.openFile(path);
+        }
+        
+        public System.Threading.Tasks.Task<string> openFileAsync(string path) {
+            return base.Channel.openFileAsync(path);
         }
     }
 }

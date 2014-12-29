@@ -24,5 +24,8 @@ namespace Servis
 
         [OperationContract]
         void begWork();
+
+        [OperationContract]
+        string openFile(string path);
     }
 }

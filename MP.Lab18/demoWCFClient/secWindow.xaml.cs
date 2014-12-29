@@ -70,10 +70,10 @@ namespace WebScreen
             int c = new DirectoryInfo(paths.Last()).GetDirectories().Count();
             if (lbDir.SelectedIndex >= c)
             {
-                StreamReader sr = new StreamReader(paths.Last() + lbDir.SelectedItem, Encoding.Default);
-                tbCont.Text = sr.ReadToEnd();
-                sr.Close();
                 string f = paths.Last() + lbDir.SelectedItem;
+
+                tbCont.Text = client.openFile(f);
+
                 if (levels.ContainsKey(f) && lvlOfSec != 2)
                 {
                     tbCont.IsReadOnly = true;

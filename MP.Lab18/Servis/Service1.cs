@@ -53,7 +53,6 @@ namespace Servis
                 return true;
             }
         }
-
         public void begWork()
         {
             using (StreamReader srlvl = new StreamReader("temp.txt", Encoding.UTF8))
@@ -69,7 +68,6 @@ namespace Servis
             }
 
         }
-
         public List<string> getFilesAndDir(string path)
         {
             List<string> re = new List<string>();
@@ -85,6 +83,16 @@ namespace Servis
             }
 
            return re;
+        }
+
+        public string openFile(string path)
+        {
+            string temp;
+            using (StreamReader sr = new StreamReader(path, Encoding.Default))
+            {
+                temp = sr.ReadToEnd();
+            }
+            return temp;
         }
     }
 }
