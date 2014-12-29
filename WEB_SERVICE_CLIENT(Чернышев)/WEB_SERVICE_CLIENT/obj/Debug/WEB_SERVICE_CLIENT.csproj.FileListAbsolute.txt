@@ -1,0 +1,13 @@
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\bin\Debug\WEB_SERVICE_CLIENT.exe.config
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\bin\Debug\WEB_SERVICE_CLIENT.exe
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\bin\Debug\WEB_SERVICE_CLIENT.pdb
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT.csprojResolveAssemblyReference.cache
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\MainWindow.baml
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\MainWindow.g.cs
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\App.g.cs
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT_MarkupCompile.cache
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT.g.resources
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT.Properties.Resources.resources
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT.csproj.GenerateResource.Cache
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT.exe
+c:\users\chmax_000\documents\visual studio 2013\Projects\WEB_SERVICE_CLIENT\WEB_SERVICE_CLIENT\obj\Debug\WEB_SERVICE_CLIENT.pdb
